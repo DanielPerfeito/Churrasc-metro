@@ -18,8 +18,10 @@ body{
 }
 
 #logo{
-    width: 300px;
-    margin: auto;
+    width: 280px;
+    display: block;
+    margin:  20px auto 0;
+    
 }
 
 h2{
@@ -99,6 +101,25 @@ p{
 
 /*ILUSTRAÇÃO===================================================*/
 
+.div-logo{
+    background-color: #C53F3F;
+    width: 100%;
+    display: none;
+}
+
+
+
+#logo-mobile{
+    display: block;
+    margin: auto;
+    height: 150px;
+}
+
+.div-mobile{
+    display: none;
+}
+
+
 h1{
     margin: 100px 0 45px 0px;
     display: inline-block;
@@ -108,7 +129,193 @@ h1{
     color: #C53F3F;
 }
 
-img{
+#ilustracao{
     width: 700px;
     display: flex;
 }
+
+#h1-mobile-2{
+   display: none;
+}
+
+/*MEDIAS========================================================*/
+
+@media screen and (max-width: 1680px) {
+
+    .container{
+        margin: 0px 5% 0px 0;
+        width: 35%;
+    }
+
+    #ilustracao{
+        width: 600px;
+        margin: 0;
+        position: relative;
+        left: 6%;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 1440px) {
+
+    #logo{
+        width: 240px;
+    }
+
+    input{
+        padding: 10px;
+        box-sizing: border-box;
+        margin: 0 auto 20px;
+    }
+
+    h1{
+        font-size: 2.1rem;
+    }
+
+    #ilustracao{
+        position: relative;
+        left: 1%;
+    }
+
+}
+
+@media screen and (max-width: 1355px) {
+
+    #logo{
+        width: 240px;
+    }
+
+    h3{
+       font-size: 1rem;
+    }
+
+    input{
+        padding: 5px 10px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin: 0 auto 20px;
+        font-size: 1rem;
+    }
+
+    input::placeholder{
+        font-size: 0.8rem;
+        font-weight: none;
+    }
+
+    button{
+        padding: 10px;
+    }
+
+    h2{
+        font-size:1.1rem
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    #ilustracao{
+        width: 500px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+
+    .div-mobile{
+        display: flex;
+       
+    }
+
+    #ilustracao-mobile{
+        display: block;
+        width: 30%;
+        margin: 20px 7% 0 0;
+    }
+
+    #h1-mobile{
+        display: flex;
+        text-align: right;
+        margin: 12% 15px 0 7%;
+    }
+
+    h1{
+        display: none;
+    }
+
+    #ilustracao{
+        display: none;
+    }
+
+    .container{
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        border-radius: 50px 50px 0px 0px;
+    }
+
+    h3{
+        font-size: 1.3rem;
+    }
+
+    input{
+        padding: 15px;
+    }
+
+    input::placeholder{
+        font-size: 1rem;
+    }
+
+    button{
+        padding: 20px;
+    }
+
+    h2{
+        font-size: 1.3rem;;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
+
+    .icons{
+        width: 195px;
+        margin: 25px auto 30px;
+    }
+    
+}
+
+@media screen and (max-width: 682px){
+
+    .div-mobile{
+        display: none;
+    }
+
+    .container{
+        border-radius: 0;
+        height: 100%;
+    }
+
+    #h1-mobile-2{
+        display: block;
+        color: #ffffff;
+        width: 70%;
+        margin: 25px auto 30px;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    h3{
+        font-size: 1.1rem;
+    }
+
+}
+
